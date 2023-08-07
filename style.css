@@ -1,0 +1,197 @@
+
+.container-project {
+  position: relative;
+  overflow: hidden;
+
+background-color: black;
+}
+
+.image {
+  opacity: 1;
+  /* display: block; */
+  width: 25rem;
+height: 12rem;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  overflow: hidden;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: linear-gradient(90deg, rgba(0,202,255,1) 20%, #9cf09a 70%);
+
+  
+}
+
+.container-project:hover .image {
+  opacity: 0.3;
+}
+
+.container-project:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:#9cf09a ;
+  color: white;
+  font-size: 16px;
+  width: 25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+  
+
+}
+
+
+
+
+
+
+
+.hoverimg {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.hoverimg:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+#demo{
+  padding: 0;
+  margin: 0;
+  /* display: none; */
+}
+.box {
+  flex: 0 0 calc(100% / 3); /* Display three boxes at a time */
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-container2 {
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-wrapper2 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+.prev-button2,
+.next-button2 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}.prev-button2 {
+  left: 0;
+}
+
+.next-button2 {
+  right: 0;
+}
+
+
+
+
+.tabletxt:hover{
+content: '';
+opacity: .5;
+}
+
+
+.usercounter{
+  color: rgb(0,202,255);
+  color: linear-gradient(90deg, rgba(0,202,255,1) 17%, rgba(15,136,87,1) 53%, rgba(105,186,99,0.8828781512605042) 66%);
+
+}
+.gradient-background:hover{
+background: rgb(0,202,255);
+background: linear-gradient(90deg, rgba(0,202,255,1) 17%, rgba(15,136,87,1) 53%, rgba(105,186,99,0.8828781512605042) 66%);
+}
